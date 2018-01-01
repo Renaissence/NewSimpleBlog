@@ -99,6 +99,8 @@ public class PostActivity extends AppCompatActivity {
                     newPost.child("image").setValue(downloadUrl.toString());
 
                     mProgress.dismiss();
+
+                    startActivity(new Intent(PostActivity.this, MainActivity.class));
                 }
             });
         }
